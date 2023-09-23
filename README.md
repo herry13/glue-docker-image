@@ -3,7 +3,7 @@
 This repository contains a Dockerfile to build a custom AWS Glue image for local
 development that supports:
 
-- DeltaLake v2.3.0 (Spark 3.3)
+- [DeltaLake v2.3.0 (Spark 3.3)](https://github.com/delta-io/delta/releases/tag/v2.3.0)
 
 ## To build
 
