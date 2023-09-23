@@ -44,6 +44,7 @@ docker run -it --rm \
 ## To run a PySpark script
 
 ```shell
+export WORKSPACE_LOCATION=/local_path_to_workspace/example_pyspark_script.py
 docker run -it --rm \
     -v ~/.aws:/home/glue_user/.aws \
     -v $WORKSPACE_LOCATION:/home/glue_user/workspace/ \
@@ -53,7 +54,7 @@ docker run -it --rm \
     --name glue_spark_submit \
     herry13/glue:linux-amd64 \
     spark-submit \
-        /home/glue_user/workspace/pyspark_script.py
+        /home/glue_user/workspace/example_pyspark_script.py
 ```
 
 Note that environment variable `WORKSPACE_LOCATION` contains the PySpark script file.
